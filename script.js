@@ -11,7 +11,7 @@ form.addEventListener('submit', function(event) {
 		return;
 	}
 
-	const url = `https://n8n.larean.com.br/webhook-test/f8583b0c-b19f-4c1c-956e-bf1722134f56?codigo=${barcode}`;
+	const url = `https://n8n.larean.com.br/webhook/f8583b0c-b19f-4c1c-956e-bf1722134f56?codigo=${barcode}`;
 	fetch(url)
 		.then(response => response.json())
 		.then(data => {
